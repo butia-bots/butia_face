@@ -49,8 +49,8 @@ class dataflowEnable():
             self.neckHorizontal.enableTorque()
             self.neckVertical.enableTorque()
 
-            self.neckHorizontal.setVelocityLimit(limit=80)
-            self.neckVertical.setVelocityLimit(limit=40)
+            self.neckHorizontal.setVelocityLimit(limit=800)
+            self.neckVertical.setVelocityLimit(limit=800)
         except Exception as e:
             print("Neck port don't connected.")
 
@@ -119,7 +119,7 @@ class dataflowEnable():
             rate.sleep()
     
     def setPause(self, msg):
-        self.pause = not msg.data
+        self.pause = msg.data
 
     def getMouth(self, msg):
         data = msg.data
