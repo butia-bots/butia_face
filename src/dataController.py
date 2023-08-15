@@ -34,7 +34,7 @@ class dataflowEnable():
 
         self.min_horizontal = 120
         self.max_horizontal = 240
-        self.min_vertical = 170
+        self.min_vertical = 150
         self.max_vertical = 190
 
         try:
